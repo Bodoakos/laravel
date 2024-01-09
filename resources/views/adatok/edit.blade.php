@@ -7,7 +7,7 @@
     @csrf
     methode('PUT')
     <fieldset>
-        <label for="name"> Kategória név:</label>
+        <label for="name">  Név:</label>
         <input type="text" name="name" id="name" value="{{old('name',$adatok->name)}}"> 
     </filedset>
     <button type="submit">ment</button>
