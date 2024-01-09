@@ -18,6 +18,7 @@ return new class extends Migration
             $table->date("Évjárat");
             $table->integer("km");
             $table->integer("Max km/h");
+            $table->string("Üzemanyag");
             $table->timestamps();
         });
     }
