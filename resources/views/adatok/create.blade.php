@@ -4,7 +4,7 @@
 @error('name')
 <div class="alert alert-warning">{{$message}}</div>
 @enderror
-<form action="{{route('adatka.store')}}" method="post">
+<form action="{{route('ujauto')}}" method="post">
     @csrf
     <fieldset>
         <label for="name"> auto név:</label>
