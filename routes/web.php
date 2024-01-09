@@ -20,3 +20,4 @@ Route::get('/', function () {
 });
 Route::get('adatok',[Adatokcontroller::class,'index']);
 Route::get('alkat',[Alkatreszcontroller::class,'index']);
+Route::post('ujauto',[Adatokcontroller::class,'store'])->name('ujauto')->
