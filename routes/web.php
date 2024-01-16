@@ -18,6 +18,10 @@ use App\Http\Controllers\Alkatreszcontroller;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('adatok',[Adatokcontroller::class,'index']);
+Route::get('adatok',[Adatokcontroller::class,'index'])->name('index');
 Route::get('alkat',[Alkatreszcontroller::class,'index']);
-Route::post('ujadatok',[Adatokcontroller::class,'store'])->name('ujauto');
+
+
+
+Route::get('ujadatok',[Adatokcontroller::class,'create'])->name('create');
+Route::post('ujadatok',[Adatokcontroller::class,'store'])->name('ujadatok');
