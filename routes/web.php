@@ -25,3 +25,4 @@ Route::get('alkat',[Alkatreszcontroller::class,'index']);
 
 Route::get('ujadatok',[Adatokcontroller::class,'create'])->name('create');
 Route::post('ujadatok',[Adatokcontroller::class,'store'])->name('ujadatok');
+Route::delete('törl/{id}',[Adatokcontroller::class,'destroy'])->name('destroy');
